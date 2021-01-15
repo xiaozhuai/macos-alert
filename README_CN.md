@@ -1,6 +1,10 @@
 # macos-alert
 
+[English](README.md) [中文](README_CN.md)
+
 一个用于在shell脚本中显示alert弹窗的工具，支持MacOS。
+
+![preview.png](preview.png)
 
 # 用法
 

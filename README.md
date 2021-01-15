@@ -1,6 +1,10 @@
 # macos-alert
 
+[English](README.md) [中文](README_CN.md)
+
 A tool to show a alert windows in shell scripts on MacOS.
+
+![preview.png](preview.png)
 
 # Usage
 
