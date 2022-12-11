@@ -24,7 +24,9 @@ int Alert::Show() {
         b.highlighted = m_defaultButton == i;
     }
 
-    [[NSRunningApplication currentApplication] activateWithOptions:NSApplicationActivateAllWindows];
+    NSPanel* panel = static_cast<NSPanel*>([alert window]);
+    panel.floatingPanel = YES;
+    [[NSRunningApplication currentApplication] activateWithOptions:NSApplicationActivateIgnoringOtherApps];
 
     int result = (int) [alert runModal];
     int btnIndex = (int) (result - NSAlertFirstButtonReturn);
